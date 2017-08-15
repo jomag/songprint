@@ -1,0 +1,8 @@
+{
+    "title": "Curl Alley Songs",
+	"prefix": "./songs/",
+	"songs": [
+		"DoinMyTime.txt",
+        "DontYouCallMyName.txt"
+	]
+}
