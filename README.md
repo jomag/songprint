@@ -13,15 +13,14 @@ The songbook configuration is stored in a JSON file. An example configuration
 
 ~~~json
 {
-    "title": "...",     // Name of the songbook
-    "prefix": "./",     // Path prefix for all songs
+    "title": "My First Songbook",
+    "prefix": "./songs/",
     "songs": [
-        // List of songs. The full path is 'prefix' plus the file name
         "gentle_on_my_mind.song.md",
         "make_you_feel_my_love.md"
     ]
 }
-~~
+~~~
 
 File format
 -----------
@@ -32,13 +31,17 @@ specific for the use case.
 
 Each song is stored in a single file, and a file can only hold one song.
 
-Lines starting with a key word followed by two colons are treated as
-key values, where the key is the word before the first colon
-and the value is whatever is stored after the last colon:
+Meta data may be supplied for each song to show extra information and
+customize the layout. The meta data should be placed at the very top
+of each song file.
 
 Example:
 
 ~~~
-Artist:: Glenn Campbell
-Author:: John Hartford
+Title: Gentle On My Mind
+Artist: Glenn Campbell
+Author: John Hartford
+
+It's knowing that your door is always open
+and your path is free to walk ...
 ~~~
