@@ -1,2 +1,3 @@
 weasyprint
 markdown
+colorama
